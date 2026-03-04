@@ -26,7 +26,7 @@ const Dashboard = () => {
     const fetchCredits = async () => {
       if (!user) return;
 
-      const res = await fetch("http://localhost:5000/api/users/credits", {
+      const res = await fetch("https://vertexa-backend-3.onrender.com/api/users/credits", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email: user.email })

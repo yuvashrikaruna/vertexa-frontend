@@ -24,7 +24,7 @@ function Contact() {
 
     try {
       const response = await fetch(
-        `${import.meta.env.VITE_API_URL || "http://localhost:5000"}/api/contact`,
+        `${import.meta.env.VITE_API_URL || "https://vertexa-backend-3.onrender.com/"}/api/contact`,
         {
           method: "POST",
           headers: {

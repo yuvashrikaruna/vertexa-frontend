@@ -23,7 +23,7 @@ const FreeTrial = () => {
 
     try {
       await createUserWithEmailAndPassword(auth, email, password);
-      await fetch("http://localhost:5000/api/users", {
+      await fetch("https://vertexa-backend-3.onrender.com/api/users", {
   method: "POST",
   headers: { "Content-Type": "application/json" },
   body: JSON.stringify({
